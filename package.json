@@ -17,11 +17,10 @@
         "chai": "~1",
         "request": "~2",
         "grunt": "~0.4.1",
-        "grunt-simple-mocha": "~0.4.0",
-        "grunt-bumpx": "~0.1.5",
-        "grunt-shell": "~0.3.1",
-        "grunt-notify": "~0.2.4",
-        "grunt-contrib-jshint": "~0.6.0"
+        "grunt-bumpx": "*",
+        "grunt-shell": "*",
+        "grunt-notify": "*",
+        "grunt-contrib-jshint": "*"
     },
     "scripts": {
         "test": "mocha"
