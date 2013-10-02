@@ -41,16 +41,6 @@ module.exports = function(grunt){
         , src: '<%= bump.patch.src %>'
       }
     }
-    , simplemocha: {
-      options: {
-        timeout: 2000
-        , ignoreLeaks: true
-        , ui: 'bdd'
-      }
-      , all: {
-        src: ['test/**/*.js']
-      }
-    }
     , shell: {
       gitTag: {
         command: 'git tag v<%= grunt.file.readJSON("package.json").version %>'
@@ -105,8 +95,8 @@ module.exports = function(grunt){
           , failOnError: true
         }
       }
-      , npmPublish: {
-        command: 'npm publish'
+      , bowerPublish: {
+        command: 'bower publish'
         , options: {
           stdout: true
           , failOnError: true
@@ -137,6 +127,6 @@ module.exports = function(grunt){
     , 'shell:gitCommitPackage'
     , 'shell:gitTag'
     , 'shell:gitPush'
-    , 'shell:npmPublish'
+    , 'shell:bowerPublish'
   ])
 }
