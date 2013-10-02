@@ -3,15 +3,13 @@
 var $ = require('jquery')
   , queues = {}
   , running = false
-  , next, push, queue, remove
 
-
-queue = function(name) {
+function queue(name) {
   if (name === true) name = '_default'
   return queues[name] || (queues[name] = [])
 }
 
-next = function(name) {
+function next (name) {
   var deferred, list, options, _ref
 
   list = queue(name)
@@ -29,7 +27,7 @@ next = function(name) {
   })
 }
 
-push = function(name, options) {
+function push(name, options) {
   var deferred, list
 
   list = queue(name)
@@ -40,7 +38,7 @@ push = function(name, options) {
   return deferred.promise()
 }
 
-remove = function(name, options) {
+function remove(name, options) {
   var i, list, value, _, _i, _len, _ref, _results
 
   list = queue(name)
