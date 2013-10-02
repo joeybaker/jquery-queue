@@ -4,13 +4,9 @@ jQuery Queue
 For browserify. Shamlessly adapted from @maccman https://gist.github.com/maccman/5790509 http://blog.alexmaccaw.com/queuing-ajax-requests
 
 ## Install
-NPM or bower. NOTE: not published yet. You'll need to manually install.
+Bower.
 
-`npm i --save git+ssh://git@github.com:joeybaker/jquery-queue.git`
-
-or
-
-`bower install joeybaker/jquery-queue`
+`bower install jquery-queue`
 
 ## Usage
 
@@ -29,3 +25,8 @@ $.ajax({
 
 ## Test
 None yet.
+
+## Changelog
+
+### 0.1.0
+Init

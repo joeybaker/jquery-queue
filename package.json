@@ -1,6 +1,6 @@
 {
   "name": "jquery-queue",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Queue jQuery's AJAX requests. Shamelessly adapted from @maccman: https://gist.github.com/maccman/5790509 for browserify.",
   "main": "index.js",
   "browser": "index.js",
