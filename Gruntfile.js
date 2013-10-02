@@ -95,13 +95,6 @@ module.exports = function(grunt){
           , failOnError: true
         }
       }
-      , bowerPublish: {
-        command: 'bower publish'
-        , options: {
-          stdout: true
-          , failOnError: true
-        }
-      }
       , npmTest: {
         command: 'npm test'
         , options: {
@@ -127,6 +120,5 @@ module.exports = function(grunt){
     , 'shell:gitCommitPackage'
     , 'shell:gitTag'
     , 'shell:gitPush'
-    , 'shell:bowerPublish'
   ])
 }

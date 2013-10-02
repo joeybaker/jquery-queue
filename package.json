@@ -1,16 +1,15 @@
 {
     "name": "jquery-queue",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "Queue jQuery's AJAX requests. Shamelessly adapted from @maccman: https://gist.github.com/maccman/5790509 for browserify.",
     "main": "index.js",
     "browser": "index.js",
     "directories": {
         "test": "test"
     },
-    "dependencies": {
-    },
+    "dependencies": {},
     "peerDependancies": {
-      "jquery": "~1.9"
+        "jquery": "~1.9"
     },
     "devDependencies": {
         "mocha": "~1",
@@ -30,10 +29,10 @@
         "url": "git://github.com/joeybaker/jquery-queue.git"
     },
     "keywords": [
-      "AJAX",
-      "jQuery",
-      "queue",
-      "async"
+        "AJAX",
+        "jQuery",
+        "queue",
+        "async"
     ],
     "author": "Joey Baker",
     "license": "BSD",
